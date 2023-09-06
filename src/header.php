@@ -9,7 +9,11 @@
 </head>
 <body>
 
-<nav>
+<nav class="nav">
+         <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
     <a href="#">Home</a>
     <a href="#">Services</a>
     <a href="#">About</a>

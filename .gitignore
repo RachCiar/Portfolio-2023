@@ -1,0 +1,9 @@
+# Yarn and npm dependencies
+node_modules/
+
+# Yarn specific
+.yarn/
+.yarnrc.yml
+
+# TypeScript compiler output
+dist/
