@@ -1,0 +1,14 @@
+/* Font family
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}

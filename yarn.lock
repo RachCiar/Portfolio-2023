@@ -687,10 +687,10 @@ prelude-ls@^1.2.1:
   resolved "https://artifacts.merck.com/artifactory/api/npm/npm-main-dev/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha1-3rxkidem5rDnYRiIzsiAM30xY5Y=
 
-prettier@^2.5.1:
-  version "2.8.8"
-  resolved "https://artifacts.merck.com/artifactory/api/npm/npm-main-dev/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
-  integrity sha1-6MXX6YpDBf/j3i4fxKyhpxwosdo=
+prettier@^3.0.3:
+  version "3.0.3"
+  resolved "https://artifacts.merck.com/artifactory/api/npm/npm-main-dev/prettier/-/prettier-3.0.3.tgz#432a51f7ba422d1469096c0fdc28e235db8f9643"
+  integrity sha1-QypR97pCLRRpCWwP3CjiNduPlkM=
 
 punycode@^2.1.0:
   version "2.3.0"
