@@ -9,6 +9,126 @@ font-family: 'Oswald', sans-serif;
 }
 
 body {
+  background: 
+    linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), 
+    url('images/backgroundImage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
-  height: 100%;
+  padding: 0;
 }
+/* Container for the two columns */
+.container {
+  display: flex;
+  background: 
+  linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), 
+  url('images/backgroundImage.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 75vh;
+  
+}
+
+/* Left Column */
+.left-column {
+  flex-direction: column;
+  display: flex;
+  flex: 1.5;
+  padding: 20px;
+}
+
+/* Each section in the left column */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Your name */
+.name {
+  font-size: 6em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #554053;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%; 
+  padding-top: 25px;
+
+ 
+}
+
+/* Your roles */
+.roles {
+  font-size: 5em;
+  font-family: 'Oswald', sans-serif;
+  color: #554053;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;  /* Added this line */
+  justify-content: flex-start;
+  padding-left: 1.5em;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/* Intro */
+.intro {
+  font-size: 2.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  color:#554053;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 5em;
+  padding-left: 2em;
+  margin: 1em;
+  background-color: rgba(255, 255, 255, 0.3); 
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+ 
+}
+
+
+/* Languages */
+.languages {
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+  color:#554053;
+  font-weight: 700;
+  display: inline-block; 
+  padding: 5px;
+  margin-top: auto; 
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2em;
+  padding-top: 1em;
+
+}
+
+.language-names {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Right Column */
+.right-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.full-image {
+  position: absolute; 
+  bottom: 0;
+  width: 95%; /* Reduce width by 50% */
+  height: auto; /* Maintain the aspect ratio */
+ 
+}
+

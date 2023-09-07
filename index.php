@@ -1,5 +1,5 @@
 <?php
-    include_once 'src/header.php';
+    include 'src/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat+Alternates:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 </head>
+<!-- ... Your existing code ... -->
 <body>
-    
+  <div class="name">
+    Rachel Ciarlante
+  </div>
+  
+  <div class='container'>
+        <!-- Left column -->
+        <div class="left-column">
+
+        <div class="roles">
+        <span>  Designer - Developer - Creator </span>
+            </div>
+          
+        <div class="intro">
+            Hello and welcome! I'm Rachel Ciarlante, 
+            a passionate Web Designer and Software Developer with a flair 
+            for creative problem-solving. Your vision deserves a digital 
+            platform that not only looks stunning but also functions seamlessly. 
+            Let's join forces to turn your ideas into a captivating online experience.
+            </div>
+            
+            <div class="languages">
+              <div>* Languages:  </div>
+               <div class="language-names" > HTML, CSS, JavaScript, TypeScript, PHP, React </div>
+            </div>
+        </div>
+
+       
+      <!-- Right column -->
+        <div class="right-column">
+        <img src="css/images/Rachel-headshot-transparent.png" alt="Rachel Ciarlante" class="full-image">
+     </div>
+  </div>
+
 </body>
+<!-- ... -->
+
 </html>
