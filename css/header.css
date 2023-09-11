@@ -13,7 +13,7 @@ nav {
   justify-content: space-between;
   background-color: #cad6d2;
   color: white;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 600;
   align-items: center;
 }
@@ -66,12 +66,12 @@ nav a:hover {
 }
 
 .menu-button::before {
-  content: "";
+  content: '';
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: "";
+  content: '';
   margin-top: 8px;
 }
 
@@ -118,7 +118,7 @@ nav a:hover {
   z-index: 1;
 
   opacity: 0; /* Start invisible */
-  content: "";
+  content: '';
   transition: opacity 0s linear 0s;
 }
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -156,6 +156,10 @@ nav a:hover {
     align-items: center;
   }
 
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
   #menu-toggle ~ .menu a {
     height: 0;
     margin: 0;
@@ -170,6 +174,7 @@ nav a:hover {
 
   .menu > a {
     display: flex;
+    font-family: 'Oswald', sans-serif;
     justify-content: flex-start;
     margin: 0;
     padding: 0.5em 0;
@@ -182,8 +187,13 @@ nav a:hover {
   }
 }
 
-/* Medium (iPad) */
-@media (min-width: 711px) and (max-width: 916px) {
+.outlined-text {
+  text-shadow: -1px -1px 0 #554053, 1px -1px 0 #554053, -1px 1px 0 #554053,
+    1px 1px 0#554053;
+}
+
+/* small mobile */
+@media (max-width: 916px) {
   nav {
     flex-direction: row;
     font-size: 18px;
@@ -191,6 +201,11 @@ nav a:hover {
   }
   nav a {
     padding: 0.25rem;
+  }
+
+  #menu-toggle ~ .menu a {
+    height: 0;
+    padding: 0;
   }
 }
 /* Medium (iPad) */

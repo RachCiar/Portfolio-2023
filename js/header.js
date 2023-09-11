@@ -1,16 +1,14 @@
-'use strict'
+'use strict';
 
 // Header
 // ======
 document.addEventListener('DOMContentLoaded', () => {
-  const menuButton = document.querySelector('.menu-button-container')
-  const menu = document.querySelector('.menu')
+  const menuToggle = document.getElementById('menu-toggle');
+  const menuButtonContainer = document.querySelector('.menu-button-container');
 
-  menuButton.addEventListener('click', () => {
-    if (menu.style.display === 'flex') {
-      menu.style.display = 'none'
-    } else {
-      menu.style.display = 'flex'
+  menuButtonContainer?.addEventListener('click', () => {
+    if (menuToggle) {
+      menuToggle.checked = !menuToggle.checked;
     }
-  })
-})
+  });
+});
