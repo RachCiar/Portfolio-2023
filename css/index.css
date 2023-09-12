@@ -18,6 +18,14 @@ body {
   height: 800px;
 }
 
+.right-column,
+.container,
+.image,
+.name-wrapper,
+.intro {
+  opacity: 0;
+}
+
 .grid-item {
   overflow: hidden; /* or overflow: hidden based on your need */
   padding: 20px; /* optional: add some padding */
@@ -27,12 +35,6 @@ body {
 .container {
   display: grid;
   position: relative;
-  background: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 1)
-    ),
-    url('images/backgroundImage.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,6 +45,25 @@ body {
     'footer footer footer';
   grid-template-columns: auto 600px 600px;
   grid-template-rows: 100px 700px 100px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-in-gradient {
+  opacity: 1;
 }
 
 .container::before {
@@ -184,4 +205,97 @@ footer {
 .outlined-text {
   text-shadow: -1px -1px 0 #554053, 1px -1px 0 #554053, -1px 1px 0 #554053,
     1px 1px 0#554053;
+}
+
+/* ************************* Key Frames ************************* */
+
+.fade-in-background {
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url('images/backgroundImage.jpg') !important;
+  animation: fade-in-background 3s ease-in-out;
+}
+
+@keyframes fade-in-background {
+  0% {
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      url('images/backgroundImage.jpg');
+  }
+  100% {
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+      ),
+      url('images/backgroundImage.jpg');
+  }
+}
+
+/* Slide in from right */
+.slide-in-right {
+  animation: slide-in-right 0.75s ease-in-out;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Expand container from center */
+.expand-from-center {
+  animation: expand-from-center 0.75s ease-in-out;
+}
+
+@keyframes expand-from-center {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Slide in from left */
+.slide-in-left {
+  animation: slide-in-left 0.75s ease-in-out;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide up from bottom */
+.slide-up-from-bottom {
+  animation: slide-up-from-bottom 0.75s ease-in-out;
+}
+
+@keyframes slide-up-from-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
