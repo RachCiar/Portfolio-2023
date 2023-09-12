@@ -16,6 +16,8 @@ nav {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 600;
   align-items: center;
+  position: relative; /* Add this line if it's not already positioned */
+  z-index: 1000;
 }
 
 nav a {
@@ -154,6 +156,7 @@ nav a:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
   }
 
   #menu-toggle:checked ~ .menu {

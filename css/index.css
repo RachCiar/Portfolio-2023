@@ -299,3 +299,85 @@ footer {
     opacity: 1;
   }
 }
+
+/* ******************** Media Queries ********************** */
+
+@media (max-width: 916px) {
+  .container {
+    grid-template-areas:
+      'name-wrapper'
+      'left-column'
+      'middle-column'
+      'right-column'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .name-wrapper {
+    grid-area: name-wrapper;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    height: 10px;
+    padding-top: 10px;
+  }
+
+  .image .full-image {
+    grid-area: left-column;
+    width: 50%;
+  }
+
+  .middle-column {
+    grid-area: middle-column;
+    margin-top: 0px;
+  }
+
+  /* Intro */
+  .intro {
+    grid-area: intro;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #735059;
+    font-weight: 300;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+  }
+
+  .right-column {
+    grid-area: right-column;
+    padding: 0;
+    margin: 0;
+    position: relative; /* Setting a relative positioning context for the child */
+    height: 100%;
+  }
+
+  /* Your roles */
+  .roles {
+    position: absolute;
+    bottom: 1px;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-right: 100px;
+    margin-right: 20px;
+    padding-bottom: 75px;
+    margin: 0;
+    width: 100%;
+    transform: scaleY(2);
+    line-height: 0.9;
+  }
+}
